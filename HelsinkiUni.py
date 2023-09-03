@@ -109,14 +109,39 @@ def last_word(sentence):
 #         print("Bye!")
 #         break
 
-
-listEntry=[]
-while True:
-    inputStr=input("Word: ")
-    if inputStr in listEntry:
-        print(f"You typed in {len(listEntry)} different words")
-        print(listEntry)
-        break
-    listEntry.append(inputStr)
-
     
+def length(my_list : list):
+    return len(my_list)
+
+def mean(my_list : list):
+    number =sum(my_list)/len(my_list)
+    return number
+
+def range_of_list(my_list : list):
+    number = max(my_list)-min(my_list)
+    return number
+
+# listEntry=[]
+# while True:
+#     inputStr=int(input("New integer: "))
+#     if inputStr==0:
+#         print('Bye!')
+#         break
+#     listEntry.append(inputStr)
+#     print(f'The list now: {listEntry}')
+#     print(f'The list now in order: {sorted(listEntry)}')
+#     print(f'List length: {length(listEntry)}')
+#     print(f'Mean of the list: {mean(listEntry)}')
+#     print(f'Range of the list: {range_of_list(listEntry)}')
+    
+while True:
+    inputStr=input("Which editor are you using?")
+    if inputStr.upper()=="NOTEPAD":
+        print("Awful!")
+    elif inputStr.upper()=="WORD":
+        print("Awful!")
+    elif inputStr.upper()=="VISUAL STUDIO CODE":
+        print("Awesome - great choice!")
+        break
+    else:
+        print("Not good")
